@@ -1,0 +1,18 @@
+Instructions for updating App.tsx:
+
+1. Add these imports at the top:
+```jsx
+import FlowBuilder from './pages/FlowBuilder';
+import Analytics from './pages/Analytics';
+import Templates from './pages/Templates';
+```
+
+2. Add these routes within the protected app routes section:
+```jsx
+<Route path="/flow-builder" element={<FlowBuilder />} />
+<Route path="/flow-builder/:id" element={<FlowBuilder />} />
+<Route path="/analytics" element={<Analytics />} />
+<Route path="/templates" element={<Templates />} />
+```
+
+3. The routing for these pages should be added right after the main app pages (Dashboard, Contacts, Campaigns) and before the Billing routes. 

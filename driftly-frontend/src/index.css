@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-bg: #1a1f2e;
+  --secondary-bg: #242a3d;
+  --accent-blue: #2563eb;
+  --accent-purple: #8b5cf6;
+  --accent-green: #10b981;
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom utility classes */
+.bg-primary {
+  background-color: var(--primary-bg);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-bg);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.accent-blue {
+  color: var(--accent-blue);
+}
+
+.accent-purple {
+  color: var(--accent-purple);
+}
+
+.accent-green {
+  color: var(--accent-green);
+}
+
+.bg-accent-blue {
+  background-color: var(--accent-blue);
+}
+
+.bg-accent-purple {
+  background-color: var(--accent-purple);
+}
+
+.bg-accent-green {
+  background-color: var(--accent-green);
+}
+
+/* Card styles */
+.card {
+  background-color: var(--secondary-bg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
